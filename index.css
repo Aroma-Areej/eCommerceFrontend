@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brandMaroon: #5c0624; /* MARK Pakistan ka signature maroon */
+  --color-brandBeige: #fcfbf7;  /* Premium luxury background vibe */
+  --color-brandDark: #1a1a1a;   /* Clean text ke liye dark grey/black */
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused; /* Jab koi cursor le jaye toh review ruk jaye */
+}
